@@ -182,7 +182,7 @@ function App() {
         <div className="row">
           {keycodes.map((keyCode)=> {
               return (
-              <div className="col-md-4">
+              <div className="col-md-4 drum-square pb-3 pt-2">
                 <div
                   className="card"
                   onClick={() => sampleClick({keyCode})}
