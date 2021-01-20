@@ -37,5 +37,29 @@
   }
 }
 
+body{
+  background-color: #acedff;
+  background-image: url('./pexels-josh-sorenson-995301.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .drum-square{
+
+}
+
+#display {
+  background-color: #ffffff26;
+}
+
+.card {
+  background-color: #1f84ff89;
+}
+
+#profile-button{
+  background-color: rgba(84, 101, 208, 0.572);
+}
+
+#drum-text{
+color: black;
 }
