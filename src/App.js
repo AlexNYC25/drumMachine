@@ -159,32 +159,35 @@ function App() {
 
   return (
     <div id="drum-machine" className="App">
-      <div id="title" className="">
+      <div id="title" className="pt-3 pb-3">
         <p className="h1">
           Drum Machine
         </p>
       </div>
-      <div id="display" className="container">
+      <div id="display" className="container pt-3 rounded-3">
         <div>
           <div id="drum-control" class="">
             <a 
-              class="btn btn-primary" 
+              id="profile-button"
+              class="btn btn-primary px-4" 
               onClick={() => {setSoundProfile(!soundProfile)}}
             >Change Sound Profile </a>
-            <label class="form-check-label" for="flexSwitchCheckDefault">
+            <label class="form-check-label px-3" for="flexSwitchCheckDefault">
               {soundProfile ? "First Sound Profile" : "Second Sound Profile"}
             </label>
           </div>
         </div>
-        <div className="row">
-          {soundName}
+        <div className="row pt-3">
+          <p className=" h3 text-center">
+            {soundName}
+          </p>
         </div>
         <div className="row">
           {keycodes.map((keyCode)=> {
               return (
               <div className="col-md-4 drum-square pb-3 pt-2">
                 <div
-                  className="card"
+                  className="card drum-text"
                   onClick={() => sampleClick({keyCode})}
                 >
                   {keyCode}
