@@ -45,7 +45,7 @@ body{
 }
 
 .drum-square{
-
+  
 }
 
 #display {
@@ -61,5 +61,6 @@ body{
 }
 
 #drum-text{
-color: black;
+  color: black;
+  background-color: #83d63f;
 }
